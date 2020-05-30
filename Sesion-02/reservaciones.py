@@ -48,6 +48,9 @@ conceptos = obtiene_conceptos()
 total = 0
 for c in conceptos:  # c -> diccionario
     c["SUBTOTAL"] = c["CANTIDAD"] * c["PRECIO"]
+
+# Ordenamiento por nombre de concepto
+conceptos.sort(key=lambda x: x["CONCEPTO"].lower())
     
 # Imprimiendo tabla
 linea = "-" * 70
