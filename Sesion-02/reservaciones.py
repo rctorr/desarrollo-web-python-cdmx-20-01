@@ -2,39 +2,47 @@
 # 2. Agregar el campo calculado de subtotal.
 # 3. Imprimir la tabla de la reservación.
 
-conceptos = [
-    {
-        "CONCEPTO":"Habitación doble",
-        "CANTIDAD":1,
-        "PRECIO":15000.00
-    },
-    {
-        "CONCEPTO":"Transporte",
-        "CANTIDAD":3,
-        "PRECIO":3000.00
-    },
-    {
-        "CONCEPTO":"Reservación en evento",
-        "CANTIDAD":1,
-        "PRECIO":3999.99
+
+def obtiene_conceptos():
+    """ Obtiene la lista de comceptos de una reservación """
+    conceptos = [
+        {
+            "CONCEPTO":"Habitación doble",
+            "CANTIDAD":1,
+            "PRECIO":15000.00
+        },
+        {
+            "CONCEPTO":"Transporte",
+            "CANTIDAD":3,
+            "PRECIO":3000.00
+        },
+        {
+            "CONCEPTO":"Reservación en evento",
+            "CANTIDAD":1,
+            "PRECIO":3999.99
+        }
+    ]
+
+    # Agregando un sólo concepto a la lista
+    concepto = {
+        "CONCEPTO":"Tour en lancha",
+        "CANTIDAD":2,
+        "PRECIO":2175.00
     }
-]
+    conceptos.append(concepto)
 
-# Agregando un sólo concepto a la lista
-concepto = {
-    "CONCEPTO":"Tour en lancha",
-    "CANTIDAD":2,
-    "PRECIO":2175.00
-}
-conceptos.append(concepto)
+    # Agregando otro concepto a la lista
+    concepto = {
+        "CONCEPTO":"alimentos y bebidas",
+        "CANTIDAD":1,
+        "PRECIO":5000.00
+    }
+    conceptos.append(concepto)
+    
+    return conceptos
 
-# Agregando otro concepto a la lista
-concepto = {
-    "CONCEPTO":"alimentos y bebidas",
-    "CANTIDAD":1,
-    "PRECIO":5000.00
-}
-conceptos.append(concepto)
+# Llamamos a la función y guardamos el valor que regresa
+conceptos = obtiene_conceptos()
 
 # Calcular el campo de subtotal y total
 total = 0
