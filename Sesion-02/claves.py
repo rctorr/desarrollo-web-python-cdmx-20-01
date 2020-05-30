@@ -7,23 +7,22 @@
 
 import random
 
-es_entero = False
-while not es_entero:
-    resp = input("Número de claves a generar N= ")
-    if resp.isdigit():
-        n = int(resp)
-        es_entero = True
-    else:
-        print("Error: El valor proporcionado no es un entero")
 
-es_entero = False
-while not es_entero:
-    resp = input("Longitud de las claves M= ")
-    if resp.isdigit():
-        m = int(resp)
-        es_entero = True
-    else:
-        print("Error: El valor proporcionado no es un entero")
+def lee_entero(msg):
+    """ Lee un número entero desde el usuario """
+    es_entero = False
+    while not es_entero:
+        resp = input(msg)
+        if resp.isdigit():
+            n = int(resp)
+            es_entero = True
+        else:
+            print("Error: El valor proporcionado no es un entero")
+
+    return n
+
+n = lee_entero("Número de claves a generar N= ")
+m = lee_entero("Longitud de las claves M= ")
 
 # Construyendo una contraseña
 minusculas = "abcdefghijklmnopqrstuvwxyz"
