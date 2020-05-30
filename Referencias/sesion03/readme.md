@@ -16,10 +16,10 @@
 * Servidor HTTP y urllib
   * [Ejemplo 03](ejemplo03/readme.md)
 * Creando módulos
-  * [Ejemplo 04](ejemplo03/readme.md)
-  * [Reto 04](reto03/readme.md)
+  * [Ejemplo 04](ejemplo04/readme.md)
+  * [Reto 04](reto04/readme.md)
 * Creando paquetes
-  * [Ejemplo 05](ejemplo04/readme.md)
+  * [Ejemplo 05](ejemplo05/readme.md)
   * [Reto 05](reto04/readme.md)
 * Postwork
   * [Postwork](postwork/readme.md)
