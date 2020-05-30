@@ -7,11 +7,11 @@
 
 ### ORGANIZACIÓN DE MÓDULO
 
- - [Sesión 1](Sesion-01): Python Fundamentals
- - [Sesión 2](Sesion-02): Estructuras de datos y funciones
- - [Sesión 3](Sesion-03): Módulos y paquetes
- - [Sesión 4](Sesion-04): Manipulación de archivos, JSON, CSV y excepciones
- - [Sesión 5](Sesion-05): Programación Orientada a Objetos
- - [Sesión 6](Sesion-06): Servidores web y APIs 
- - [Sesión 7](Sesion-07): Web Scraping
- - [Sesión 8](Sesion-08): Computación numérica o científica
+ - [Sesión 1](sesion01/readme.md): Python Fundamentals
+ - [Sesión 2](sesion02/readme.md): Estructuras de datos y funciones
+ - [Sesión 3](sesion03/readme.md): Módulos y paquetes
+ - [Sesión 4](sesion04/readme.md): Manipulación de archivos, JSON, CSV y excepciones
+ - [Sesión 5](sesion05/readme.md): Programación Orientada a Objetos
+ - [Sesión 6](sesion06/readme.md): Servidores web y APIs 
+ - [Sesión 7](sesion07/readme.md): Web Scraping
+ - [Sesión 8](sesion08/readme.md): Computación numérica o científica
