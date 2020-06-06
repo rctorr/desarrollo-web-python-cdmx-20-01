@@ -1,0 +1,32 @@
+[
+    {
+        "ALIMENTO": "Alb\u00f3ndigas",
+        "RACI\u00d3N": "100g",
+        "CALOR\u00cdAS": "202 kcal"
+    },
+    {
+        "ALIMENTO": "Arroz frito",
+        "RACI\u00d3N": "100g",
+        "CALOR\u00cdAS": "186 kcal"
+    },
+    {
+        "ALIMENTO": "Arroz integral",
+        "RACI\u00d3N": "100g",
+        "CALOR\u00cdAS": "362 kcal"
+    },
+    {
+        "ALIMENTO": "Barbacoa de borrego",
+        "RACI\u00d3N": "100g",
+        "CALOR\u00cdAS": "170 kcal"
+    },
+    {
+        "ALIMENTO": "Burrito",
+        "RACI\u00d3N": "100g",
+        "CALOR\u00cdAS": "163 kcal"
+    },
+    {
+        "ALIMENTO": "Cuerra el pico",
+        "RACI\u00d3N": "100g",
+        "CALOR\u00cdAS": "0 kcal"
+    }
+]
