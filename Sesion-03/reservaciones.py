@@ -65,19 +65,16 @@ def imprime_txt(conceptos, total):
 def imprime_html(conceptos, total):
     """ Imprime en formato HTML la lista de conceptos """
     # Imprimiendo tabla
-    linea = "-" * 70
-    formato1 = "{:30} | {:8} | {:10} | {:10}"  # Encabezado
-    formato2 = "{:30} | {:8} | {:10.2f} | {:10.2f}"  # Para los conceptos
-    formato3 = "{:30} | {:8} | {:>10} | {:10.2f}"  # Para el total
+    formato1 = "<tr><th>{}</th><th>{}</th><th>{}</th><th>{}</th></tr>"
+    formato2 = "<tr><td>{}</td><td>{}</td><td>{}</td><td>{}</td></tr>"  # Para los conceptos
 
-    print(linea)
+    print("<table>")
     print(formato1.format("CONCEPTO", "CANTIDAD", "PRECIO", "SUBTOTAL"))
-    print(linea)
     for c in conceptos:
         print(formato2.format(
             c["CONCEPTO"], c["CANTIDAD"], c["PRECIO"], c["SUBTOTAL"]))
-    print(linea)
-    print(formato3.format("", "", "Total", total))
+    print(formato2.format("", "", "Total", total))
+    print("</table>")
 
 
 @click.command()
