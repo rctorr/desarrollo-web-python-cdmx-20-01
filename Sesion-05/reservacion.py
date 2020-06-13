@@ -20,6 +20,36 @@ class Consumo:
         """ Regresa la representación en str del objeto """
         return self.concepto
 
+    def tupla(self):
+        """ Regresa la representación en tupla de un Consumo """
+        return (self.id, self.concepto, self.cantidad, self.precio)
+    
+    def en_txt(self):
+        """ Define el formato en TXT de un consumo """
+        formato1 = "{:2} | {:25} | {:3} | {:8}"
+        return formato1.format(*self.tupla())
+
+    
+class Reservacion:
+    def __init__(self, lista_consumos):
+        """ Constructor del objeto Reservacion """
+        self.lista_consumos = lista_consumos
+        
+class ReservacionTXT(Reservacion):
+    def __init__(self, lista_consumos):
+        Reservacion.__init__(self, lista_consumos)
+        
+    def __str__(self):
+        """
+        Define la representación en str formateado en TXT para una
+        reservación.
+        """
+        cadena = ""
+        for consumo in self.lista_consumos:
+            cadena += consumo.en_txt() + "\n"
+        
+        return cadena
+    
 
 def lee_csv(nomarch):
     """ Lee desde nomarch la lista de consumos """
@@ -57,10 +87,10 @@ def main(id):
     # Usando listas de compresión
     consumos_id = [
         consumo for consumo in consumos if consumo.id == id]
-    
+
     # Imprimir
-    for consumo in consumos_id:
-        print(consumo.id, consumo, consumo.cantidad)
+    reservacion_txt = ReservacionTXT(consumos_id)
+    print(reservacion_txt)
 
 
 if __name__ == "__main__":
