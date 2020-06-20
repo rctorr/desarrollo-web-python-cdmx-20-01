@@ -37,4 +37,31 @@ def index(id):
     return template(plantilla, id=id)
 
 
-run(host='localhost', port=8080)
+@route('/json/<id:int>')
+def reservacion_json(id):
+    """ Responde a la petición GET /json/<id> """
+
+    # Obtener lista de consumos en base al id desde el archivo csv
+    nomarch = "reservaciones.csv"
+    consumos = lee_csv(nomarch)
+    consumos_id = [
+        consumo for consumo in consumos if consumo.id == id]
+    
+    # Armando la reservacion en diccionario
+    reservacion_dict = {
+        "ID" : id,
+        "CONSUMOS" : []
+    }
+    for consumo in consumos_id:
+        consumo_dict = {
+            "id" : consumo.id,
+            "concepto" : consumo.concepto,
+            "cantidad" : consumo.cantidad,
+            "precio" : consumo.precio
+        }
+        reservacion_dict["CONSUMOS"].append(consumo_dict)
+
+    return reservacion_dict
+
+
+run(host='localhost', port=8080, reloader=True)
