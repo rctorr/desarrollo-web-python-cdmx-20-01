@@ -9,9 +9,9 @@ if respuesta.status_code == 200:
     # Obtener el título
     print(sopa.title.string)
     # Obtener lista de imágenes
-    for img in sopa.find_all("img"):
+    for i, img in enumerate(sopa.find_all("img")):
         # Filtrando sólo las fotos
         if "photo" in img["src"]:
-            print(img["src"])
+            print(i, img["src"])
 else:
     print("Error al obtener la página!", respuesta.status_code)
