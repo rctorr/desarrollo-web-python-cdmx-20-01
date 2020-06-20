@@ -1,0 +1,16 @@
+ID,CONCEPTO,CANTIDAD,PRECIO
+1,alimentos y bebidas,1,5000.00
+1,Habitación doble,1,15000.00
+1,Reservación en evento,1,3999.99
+1,Tour en lancha,2,2175.00
+1,Transporte,3,3000.00
+2,alimentos y bebidas,1,3500.00
+2,Habitación doble,2,4500.00
+2,Tour en ciudad,1,1576.00
+2,Transporte,5,500.00
+3,alimentos y bebidas,3,1850.00
+3,Habitación sencilla,1,1500.00
+3,Reservación en evento,1,2500.00
+3,Caminata nocturna,1,850.00
+3,Tour con luciérnagas,1,750.00
+3,Transporte,6,350.00
